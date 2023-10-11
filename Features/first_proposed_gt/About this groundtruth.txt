@@ -1,0 +1,6 @@
+1st groundtruth proposal: using features from the whole pole to predict the given scores.
+-----------------------------------------------------------------------------------------
+
+This proposal will likely not work, as these scores were given following a quick visual inspection of the sensors' results.
+
+For a better proposal, based on the density of the pole in various places, please check the second proposal folder.

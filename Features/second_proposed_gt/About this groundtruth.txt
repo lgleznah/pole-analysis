@@ -1,0 +1,24 @@
+DESCRIPTION:
+
+2nd groundtruth proposal: dividing the pole in 10 chunks along its vertical axis and in 3 cylindrical sectors around its centre. 
+The pole is split into 10 observational units (one for each chunk), and each contains the average density on the surface, middle and core sectors.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+SUMMARY:
+
+This might be a better approach, since the bottom part of a pole cannot be treated the same way as the top part: i.e., the former has to support
+the whole weight of the pole, and defects in this are might be more dangerous than in the top.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+DATA DICTIONARY:
+
+	- pole_id (integer): the ID of the pole. Pole 0 is the new pole, the others keep their regular numbering
+	- height_id (integer): the specific chunk of the pole, ordered from 0 to 10 as the top of the pole to the bottom.
+	- surface_density (float): average value of this chunk of the pole in the surface unroll.
+	- middle_density (float): average value of this chunk of the pole in the middle unroll.
+	- interior_density (float): average value of this chunk of the pole in the interior unroll.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+MORE COMENTARIES:
+
+The unrolls have been computed by transforming the X-Ray scan into polar coordinates, taking 1000 angles to resample the scan, assuming the pole
+centre to be at the center of the scan, and assuming the pole to have a 75 pixel radius. To obtain each unroll, samples from the scan have been
+obtained in a certain interval of the radius, enough to cover all pixels within that interval. This interval was 0-33% of the radius for the
+interior scan, 33-66% for the middle scan, and 66-100% for the surface scan.
