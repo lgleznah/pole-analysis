@@ -1,5 +1,5 @@
 # pole-analysis
-Code employed for the "Modern NLP and computer vision techniques for wooden utility pole density estimation with contact-free sensing" paper
+Code employed for the "Multimodal computer vision techniques for wooden utility pole density estimation with contact-free sensing" paper
 
 ## Project structure
 - `requirements.txt`: dependencies required to run this code
